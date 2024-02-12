@@ -5,7 +5,7 @@ inquirer
         {
             //text,  
             type: 'input',
-            name: '',
+            name: 'text',
             message: 'Please enter upto three characters',
         },
         {
@@ -24,14 +24,14 @@ inquirer
         {
             //,  
             type: 'input',
-            name: 'shape',
-            message: 'What shape would yopu like the3 backgroud to be',
-        },
-        {
-            //,  
-            type: 'input',
             name: 'shapeColor',
             message: 'What Colour should the shape be? (colour keyword or hexadecimal)',
         },
     ])
-    .then();
+    .then((answers) => {
+        const image = generateSVG(answers);
+    });
+
+const generateSVG = (answers)=> {
+
+};
