@@ -1,6 +1,10 @@
 const inquirer = require("inquirer");
-var validateColorName = require("validate-color").validateHTMLColorName;
-var validateColorHex = require("validate-color").validateHTMLColorHex;
+const fs = require('fs');
+const validateColorName = require("validate-color").validateHTMLColorName;
+const validateColorHex = require("validate-color").validateHTMLColorHex;
+
+const generateSvg = require('./generateSVG');
+
 
 const isValidText = async (input) => {
     if (!input) {
@@ -43,7 +47,7 @@ inquirer
     },
     {
       //Shape selector
-      type: "checkbox",
+      type: "list",
       name: "shape",
       message: "What shap would yopu like the3 backgroud to be",
       choices: ["circle", "triangle", "square"],
@@ -58,7 +62,17 @@ inquirer
     },
   ])
   .then((answers) => {
-    const image = generateSVG(answers);
+    console.log(answers);
+    const image = generateSvg(answers);
+    const fileName = 'image.svg';
+    const filePath = `./${fileName}`;
+    fs.writeFile(filePath, image, (WriteErr) =>
+    WriteErr
+      ? console.error(WriteErr)
+      : console.log(
+          `${fileName} created in the ${filePath}`
+        )
+  );
   });
 
 
@@ -66,4 +80,4 @@ inquirer
 
 
 
-const generateSVG = (answers) => {};
+
