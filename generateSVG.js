@@ -20,8 +20,7 @@ ${shape.render()}
 <text x="${shape.width / 2}" y="${shape.height / 2}" text-anchor="middle" dominant-baseline="middle" stroke="${textColor}" fill="${textColor}" font-size="100">${text}</text>
 </svg>`;
 
-  console.log(svgImage);
-  return svgImage;
+ return svgImage;
 };
 
 module.exports = generateSVG;

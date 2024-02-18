@@ -62,7 +62,7 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log(answers);
+    console.info('Generating Image.....');
     const image = generateSvg(answers);
     const fileName = 'image.svg';
     const filePath = `./${fileName}`;
