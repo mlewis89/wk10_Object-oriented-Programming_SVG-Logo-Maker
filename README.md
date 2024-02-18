@@ -6,19 +6,20 @@
 
 ## Description
 
-The purpose of this application is to test my knowledge of Node JS, by prompting the user for information about their project and then generating a professional README.md file.
+The purpose of this application is to test my knowledge of Node-js Object-Orriented-Programming and unit testing, by prompting the user for information about their desired logo and then generating  a SVG image from their responses.
 
-This application saves the user time in producing a readme file.
+This application saves the user from needing a graphic design to create a simple logo.
 
-During this project I learnt how to create links and dynamic iamges within the markdown language, while also improving my knowledge of the inquirer package.
+During this project I learnt how to create classes, to allow for modular programing and how to complete unit tests on code to ensure it working as intended. I have also learnt a significant amonth about how to generate and SVG image from code.
 
 ## Table of Contents
     
 - [User Story](#sser-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)
+- [Testing](#testing)
 - [Usage](#usage)
-- [Screenshots](<#screenshots-of-completed-challenge>)
+- [Screenshots/Video](<#screenshots--video-of-completed-challenge>)
 - [License](#license)
 - [Credits](#credits)
 - [Questions / How to Contribute](#questions--how-to-contribute)
@@ -26,9 +27,9 @@ During this project I learnt how to create links and dynamic iamges within the m
 ## User Story
 
 ```
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+AS a freelance web developer
+I WANT to generate a simple logo for my projects
+SO THAT I don't have to pay a graphic designer
 ```
 
 ## Acceptance Criteria
@@ -58,20 +59,26 @@ Clone the repo to a local folder and then from the terminal inside the main dire
        
     npm install -y
 
+## Testing
+
+Run the following command to run the unit tests on the classes and functions using Jest.
+       
+    npm test
+
 ## Usage
     
-Open the terminal in the Main Folder and enter the following command and answer the prompts
+Open the terminal in the Root Folder and enter the following command and answer the prompts
 
     node index.js
 
 GitHub repository
-https://github.com/mlewis89/wk9-Nodejs-Professional_README_Generator/
+https://github.com/mlewis89/wk10_Object-oriented-Programming_SVG-Logo-Maker/
 
-## Screenshots of Completed Challenge
+## Screenshots / Video of Completed Challenge
 
-![completed application](./Assets/screenshot.PNG)
+![completed application](#)
 
-[Click here to view a video of the application in use](./assets/wk9-readme%20generator.mp4)
+[Click here to view a video of the application in use](#)
 
 ## License
 This project is licensed under the MIT.
