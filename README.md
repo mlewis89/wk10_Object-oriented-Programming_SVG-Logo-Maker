@@ -1,6 +1,6 @@
 
 
-# Bootcamp Challenge Week Nine - Node js - Professional Readme Generator
+# Bootcamp Challenge Week ten - Object-Oriented Programming: SVG Logo Maker
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
