@@ -1,10 +1,18 @@
-const Shape = require('../lib/circle');
-describe('Circle',() => {
-    describe('render',() => {
-        it('should be an SVG polygon of the specified dimensions ',()=>{
+const Circle = require("../lib/circle");
+describe("Circle", () => {
+    describe('Intantiate',() => {
+        it('should be an instant of the Circle class',()=>{
             const shape = new Circle();
-            shape.setColor("blue");
-            expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+
+            expect(shape).toBeInstanceOf(Circle);
         })
     })
-})
+    describe("render", () => {
+    it("should be an SVG circle of the specified dimensions ", () => {
+      const shape = new Circle();
+      shape.setColor("blue");
+      expect(shape.render()).toEqual('<circle cx="100" cy="150" r="100" fill="blue"/>'
+      );
+    });
+  });
+});
