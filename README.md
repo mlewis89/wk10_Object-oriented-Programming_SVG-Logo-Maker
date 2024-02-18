@@ -76,9 +76,10 @@ https://github.com/mlewis89/wk10_Object-oriented-Programming_SVG-Logo-Maker/
 
 ## Screenshots / Video of Completed Challenge
 
-![completed application](#)
+![completed application](/assets/screenshot.PNG)
 
-[Click here to view a video of the application in use](#)
+[Click here to view a video of the application in use](/assets/wk10-svg-generator.mp4)
+alternate video link - https://watch.screencastify.com/v/evz9UvnILzZZ27muz44H
 
 ## License
 This project is licensed under the MIT.
