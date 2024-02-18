@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
-const fs = require('fs');
+
 const validateColorName = require("validate-color").validateHTMLColorName;
 const validateColorHex = require("validate-color").validateHTMLColorHex;
 
-const generateSvg = require('./generateSVG');
+const generateSvg = require('./lib/generateSVG');
 
 
 const isValidText = async (input) => {
@@ -62,17 +62,7 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.info('Generating Image.....');
-    const image = generateSvg(answers);
-    const fileName = 'image.svg';
-    const filePath = `./${fileName}`;
-    fs.writeFile(filePath, image, (WriteErr) =>
-    WriteErr
-      ? console.error(WriteErr)
-      : console.log(
-          `${fileName} created in the ${filePath}`
-        )
-  );
+    generateSvg(answers);
   });
 
 
